@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator with History</title>
+  <style>
+    input { width: 80px; margin: 5px; }
+    button { width: 80px; margin: 5px; }
+    #console { margin-top: 20px; background: #f0f0f0; padding: 10px; height: 150px; overflow-y: auto; font-family: monospace; }
+  </style>
+</head>
+<body>
+
+  <h1>Calculator with History</h1>
+
+  <input type="number" id="num1" placeholder="Number 1">
+  <input type="number" id="num2" placeholder="Number 2">
+  <br>
+
+  <button onclick="calculate('add')">+</button>
+  <button onclick="calculate('subtract')">−</button>
+  <button onclick="calculate('multiply')">×</button>
+  <button onclick="calculate('divide')">÷</button>
+
+  <button onclick="displayHistory()">Show History</button>
+  <button onclick="clearHistory()">Clear History</button>
+
+  <h2>Result: <span id="result">0</span></h2>
+
+  <h3>Console / History:</h3>
+  <div id="console"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
