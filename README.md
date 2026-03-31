@@ -21,3 +21,5 @@ Add more pages (About, Projects, Contact)
 Improve styling and animations
 
 Make it fully responsive for all devices
+
+By:Cynthia Wangui
